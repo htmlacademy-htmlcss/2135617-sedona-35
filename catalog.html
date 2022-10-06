@@ -60,70 +60,70 @@
       </header>
 
       <section class="filters">
-        <fieldset class="check-filter-group">
-          <legend class="check-filter-title">Инфраструктура:</legend>
-          <ul class="check-filter-list">
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="swimming" checked>
+        <fieldset class="filters-group">
+          <legend class="filters-title">Инфраструктура:</legend>
+          <ul class="filters-list">
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="checkbox" name="swimming" checked>
             Бассейн
               </label>
             </li>
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="parking" checked>
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="checkbox" name="parking" checked>
             Парковка
               </label>
             </li>
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="checkbox" name="wifi">
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="checkbox" name="wifi">
             Wi-Fi
               </label>
             </li>
           </ul>
         </fieldset>
 
-        <fieldset class="check-filter-group">
-          <legend class="check-filter-title">Тип Жилья:</legend>
-          <ul class="check-filter-list">
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="hostel" checked>
+        <fieldset class="filters-group">
+          <legend class="filters-title">Тип Жилья:</legend>
+          <ul class="filters-list">
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="radio" name="product-group" value="hostel" checked>
             Гостиница
               </label>
             </li>
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="motel">
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="radio" name="product-group" value="motel">
             Мотель
               </label>
             </li>
-            <li class="check-filter-item">
-              <label class="control">
-                <input class="control-input" type="radio" name="product-group" value="appartaments">
+            <li class="filters-item">
+              <label class="filters-control">
+                <input class="filters-input" type="radio" name="product-group" value="appartaments">
             Аппартаменты
               </label>
             </li>
-            <li class="check-item">
+            <li class="filters-item">
               <h2 class="visually-hidden">Стоимость, Р:</h2>
               <!-- крутилка + цена-->
-              <fieldset class="check-number">
+              <fieldset class="filters-number">
                 <input type="number" value="0">
                 <p>от</p>
               </fieldset>
-              <fieldset class="check-number">
+              <fieldset class="filters-number">
                 <input type="number" value="9000">
                 <p>до</p>
               </fieldset>
-              <fieldset class="check-range">
+              <fieldset class="filters-range">
                 <input type="range">
               </fieldset>
             </li>
-            <li class="check-item">
-              <form class="check-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <li class="filters-item">
+              <form class="filters-check" action="https://echo.htmlacademy.ru/" method="get">
                 <button class="button" type="submit">ПРИМЕНИТЬ</button>
-              <form class="check-filter">
+              
                 <button class="button" type="reset">СБРОСИТЬ</button>
               </form>
             </li>
@@ -140,19 +140,21 @@
         <option value="expensive">Сначала дорогое</option>
       </select>
       <ul class="panel-hotels">
-        <a href="#" class="button button-light">
-          <span class="visually-hidden">Показать список</span>
-        </a>
-      </ul>
-      <ul class="panel-hotels">
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать карточки</span>
-        </a>
-      </ul>
-      <ul class="panel-hotels">
-        <a class="button" href="#">
-          <span class="visually-hidden">Показать другой вид карточек</span>
-        </a>
+        <li class="panel-list">
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Показать список</span>
+          </a>
+        </li>  
+        <li class="panel-list">
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать карточки</span>
+          </a>
+        </li>
+        <li class="panel-list">
+          <a class="button" href="#">
+            <span class="visually-hidden">Показать другой вид карточек</span>
+          </a>
+        </li> 
       </ul>
 
       <ul class="product-list">
@@ -166,11 +168,11 @@
           <b class="product-card-price">От 4000 ₽</b>
           <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-button button-wite" href="#">В ИЗБРАННОЕ</a>
-          <div class="product-star">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
+          <div class="product-stars">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
           </div>
           <p class="product-card-rating">РЕЙТИНГ: 8,5</p>
         </li>
@@ -184,11 +186,11 @@
           <b class="product-card-price">От 5000 ₽</b>
           <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-button button-wite" href="#">В ИЗБРАННОЕ</a>
-          <div class="product-star">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
+          <div class="product-stars">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
           </div>
           <p class="product-card-rating">РЕЙТИНГ: 9,2</p>
         </li>
@@ -202,10 +204,10 @@
           <b class="product-card-price">От 2500 ₽</b>
           <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-button button-wite" href="#">В ИЗБРАННОЕ</a>
-          <div class="product-star">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
+          <div class="product-stars">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
           </div>
           <p class="product-card-rating">РЕЙТИНГ: 6,9</p>
         </li>
@@ -219,9 +221,9 @@
           <b class="product-card-price">От 1500 ₽</b>
           <a class="product-card-link button" href="#">ПОДРОБНЕЕ</a>
           <a class="product-card-button button-wite" href="#">В ИЗБРАННОЕ</a>
-          <div class="product-star">
-            <img class="star" src="" alt="">
-            <img class="star" src="" alt="">
+          <div class="product-stars">
+            <img class="product-stars-image" src="" alt="">
+            <img class="product-stars-image" src="" alt="">
           </div>
           <p class="product-card-rating">РЕЙТИНГ: 5,0</p>
         </li>
@@ -284,7 +286,7 @@
         </section>
       <a class="phone-number" href="tel:78121212">+7 (812)-12-12</a>
       <a class="copyright-link" href="#">
-        <img class="logo- copyright-link" src="" alt=".html academy">
+        <img class="copyright-image" src="" alt=".html academy">
       </a>
     </footer>
   </body>
