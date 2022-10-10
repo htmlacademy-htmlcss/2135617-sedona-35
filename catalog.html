@@ -60,30 +60,30 @@
       </header>
 
       <section class="filters">
-        <fieldset class="filters-group">
-          <legend class="filters-title">Инфраструктура:</legend>
-          <ul class="filters-list">
-            <li class="filters-item">
-              <label class="filters-control">
-                <input class="filters-input" type="checkbox" name="swimming" checked>
-            Бассейн
-              </label>
-            </li>
-            <li class="filters-item">
-              <label class="filters-control">
-                <input class="filters-input" type="checkbox" name="parking" checked>
-            Парковка
-              </label>
-            </li>
-            <li class="filters-item">
-              <label class="filters-control">
-                <input class="filters-input" type="checkbox" name="wifi">
-            Wi-Fi
-              </label>
-            </li>
-          </ul>
-        </fieldset>
         <form class="filters-check" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="filters-group">
+            <legend class="filters-title">Инфраструктура:</legend>
+            <ul class="filters-list">
+              <li class="filters-item">
+                <label class="filters-control">
+                  <input class="filters-input" type="checkbox" name="swimming" checked>
+              Бассейн
+                </label>
+              </li>
+              <li class="filters-item">
+                <label class="filters-control">
+                  <input class="filters-input" type="checkbox" name="parking" checked>
+              Парковка
+                </label>
+              </li>
+              <li class="filters-item">
+                <label class="filters-control">
+                  <input class="filters-input" type="checkbox" name="wifi">
+              Wi-Fi
+                </label>
+              </li>
+            </ul>
+          </fieldset>
           <fieldset class="filters-group">
             <legend class="filters-title">Тип Жилья:</legend>
             <ul class="filters-list">
@@ -105,25 +105,25 @@
               Аппартаменты
                 </label>
               </li>
-              <li class="filters-item">
+              <div class="filters-item">
                 <h2 class="visually-hidden">Стоимость, Р:</h2>
 
-                <fieldset class="filters-number">
+                <div class="filters-number">
                   <input type="number" value="0">
                   <p>от</p>
-                </fieldset>
-                <fieldset class="filters-number">
+                </div>
+                <div class="filters-number">
                   <input type="number" value="9000">
                   <p>до</p>
-                </fieldset>
-                <fieldset class="filters-range">
+                </div>
+                <div class="filters-range">
                   <input type="range">
-                </fieldset>
-              </li>
-              <li class="filters-item">
+                </div>
+              </div>
+              <div class="filters-item">
                   <button class="button" type="submit">ПРИМЕНИТЬ</button>
                   <button class="button" type="reset">СБРОСИТЬ</button>
-              </li>
+              </div>
             </ul>
           </fieldset>
         </form>
@@ -253,20 +253,20 @@
         <h3 class="subscription-title">Только полезная информация и никакого спама, честное бойскаутское!</h3>
         <form class="subscription-form" action="#" method="post">
           <label for="subscription-email">Ваш e-mail</label>
-            <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
-              <button class="button newsletter-button" type="submit">
-                <span class="visually-hidden">Подписаться</span>
-              </button>
+          <input class="field"  placeholder="email@example.com" type="email" name="newsletter-email" id="newsletter-email" required>
+          <button class="button newsletter-button" type="submit">
+            <span class="visually-hidden">Подписаться</span>
+          </button>
         </form>
       </section>
     </main>
 
     <footer class="social">
-        <section class="social-icons">
+        <section class="social-networks">
           <h2 class="visually-hidden">Контакты</h2>
           <ul class="social-list">
             <li class="social-item">
-              <a class="button" href="#">
+              <a class="social-link" href="#">
                 <span class="visually-hidden">ВКонтакте</span>
               </a>
             </li>
